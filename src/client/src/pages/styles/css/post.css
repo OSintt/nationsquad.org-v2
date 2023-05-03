@@ -1,0 +1,144 @@
+.post-textarea {
+  border: 3px solid #23272A;
+  width: 100%;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.toggle-form {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  color: #fff;
+}
+
+.post-textarea-content {
+  height: 337.33px;
+  max-width: 806.63px;
+  overflow: auto;
+}
+
+.post-container h1 {
+  text-align: center;
+}
+.post-container .post-box {
+  justify-content: center;
+}
+.post-container .post-title {
+  display: grid;
+  grid-template-rows: 3, 1fr;
+  align-items: center;
+}
+.post-container .post-title label {
+  width: 100%;
+  display: block;
+  grid-row: 2/3;
+}
+.post-container .post-title .post-author {
+  grid-row: 1/3;
+  justify-content: end;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.post-container .post-title .post-author span {
+  color: #333;
+  margin-right: 10px;
+}
+.post-container .post-title img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.post-container input {
+  width: 100%;
+  outline: 0;
+  display: block;
+  border: 3px solid #23272A;
+  background: transparent;
+  color: #fff;
+  padding: 5px 2px;
+  margin: 5px 0;
+  font-family: "Montserrat", sans-serif;
+}
+.post-container textarea {
+  height: auto;
+  font-family: "Montserrat", sans-serif;
+  outline: 0;
+  display: block;
+  border: none;
+  background: transparent;
+  color: #fff;
+  margin: 5px 0;
+  resize: none;
+  width: 100%;
+}
+.post-container label span {
+  font-size: 13px;
+  color: #a6a6a6;
+}
+.post-container .post-tags-added {
+  margin: 10px 0;
+  justify-content: end;
+}
+.post-container .post-tags-added div {
+  align-items: center;
+  text-align: center;
+  color: #DD364D;
+  margin-left: 10px;
+  background: #222;
+  border-bottom: 2px solid #272626;
+  padding: 0 6px;
+  border-radius: 3px;
+  font-family: segoe ui, trebuchet MS, Lucida Sans Unicode, Lucida Sans, Sans-Serif;
+  font-size: 12px;
+  opacity: 0.75;
+}
+.post-container .post-tags-edit {
+  align-items: center;
+  justify-content: space-between;
+}
+.post-container .tags-input {
+  border: 3px solid #23272A;
+  background: transparent;
+  color: #fff;
+  padding-left: 5px;
+  align-items: center;
+  border-radius: 0 50px 50px 0;
+  margin-top: 5px;
+}
+.post-container .tags-input input {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.post-container .tags-input .add-icon {
+  padding: 5px 10px;
+}
+.post-container .tags-input .add-icon button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: 0;
+  background: none;
+  color: #fff;
+}
+
+.single-dox-content {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+.single-dox-content a:hover {
+  text-decoration: underline;
+}
+
+.hcaptcha-form {
+  flex-wrap: wrap;
+  align-items: start;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 0;
+}
+
+/*# sourceMappingURL=post.css.map */

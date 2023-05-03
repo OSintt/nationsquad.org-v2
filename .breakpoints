@@ -1,0 +1,20 @@
+{
+  "files": {
+    "src/app/components/New.js": [
+      {
+        "id": "759575ac-f462-4801-95dd-c8d8c1a7daef",
+        "line": 70,
+        "version": 131,
+        "index": 2518
+      }
+    ],
+    "webpack.config.js": [
+      {
+        "id": "3066c949-0b47-4605-a98c-8b864c39732f",
+        "line": 13,
+        "version": 2,
+        "index": 311
+      }
+    ]
+  }
+}

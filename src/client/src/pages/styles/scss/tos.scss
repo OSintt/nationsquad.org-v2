@@ -1,0 +1,57 @@
+@import '__vars';
+
+.guidelines-box, .guidelines-info {
+    font-family: 'Helvetica';
+}
+
+.guidelines-box {
+    h2 {
+        margin: 0;
+        color: $red;
+        font-weight: 500;
+    }
+}
+
+.tos-titleanddescription {
+    flex-wrap: wrap;
+    align-items: center;
+    p {
+        margin-right: 5px;
+    }
+
+    .tos-description {
+        color: $muted;
+    }
+
+    .tos-title {
+        color: $red;
+        font-weight: 600;
+    }
+}
+
+.publish-tos {
+    ul {
+        p {
+            margin: 5px 0;
+        }
+        margin: 0;
+        padding: 0;
+        list-style: none; 
+        margin-left: 0;
+        li {
+           margin: 0;
+           padding: 0; 
+        }
+    }
+}
+
+.terms {
+    margin: 2em 0;
+}
+
+@media (max-width: $tablet) {
+    .guidelines-container {
+        display: flex;
+        justify-content: center;
+    }
+}

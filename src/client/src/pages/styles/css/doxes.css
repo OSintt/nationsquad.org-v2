@@ -1,0 +1,168 @@
+.doxes-container {
+  display: grid;
+  justify-items: center;
+}
+.doxes-container h1 {
+  text-align: center;
+}
+
+.delete-dox-popup {
+  animation: anvil 0.3s cubic-bezier(0.38, 0.1, 0.36, 0.9) forwards;
+  background: #000;
+}
+.delete-dox-popup .delete-dox-items {
+  border-radius: 5px 5px 0 0;
+  padding: 1em;
+  border: 3px solid #333;
+}
+.delete-dox-popup .delete-dox-items .delete-dox-close-icon {
+  justify-content: end;
+}
+.delete-dox-popup .delete-dox-items p {
+  color: #DD364D;
+  font-weight: 600;
+}
+.delete-dox-popup .delete-dox-buttons {
+  border-radius: 0 0 5px 5px;
+  padding: 1em;
+  justify-content: end;
+  align-items: center;
+  background: #000;
+  border-bottom: 3px solid #333;
+  border-right: 3px solid #333;
+  border-left: 3px solid #333;
+}
+.delete-dox-popup .delete-dox-buttons button {
+  font-family: "Montserrat", sans-serif;
+  outline: 0;
+  color: #fff;
+  margin-left: 1em;
+  padding: 5px 1em;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+.delete-dox-popup .delete-dox-buttons button:hover {
+  cursor: pointer;
+}
+.delete-dox-popup .delete-dox-buttons .delete-dox-cancel-button {
+  border: 3px solid #333;
+  background: #333;
+}
+.delete-dox-popup .delete-dox-buttons .delete-dox-cancel-button:hover {
+  border: 3px solid #23272A;
+  background: #23272A;
+}
+.delete-dox-popup .delete-dox-buttons .delete-dox-accept-button {
+  background: #DD364D;
+  border: 3px solid #DD364D;
+}
+.delete-dox-popup .delete-dox-buttons .delete-dox-accept-button:hover {
+  background-color: #c91e33;
+  border: 3px solid #c91e33;
+}
+
+.dox-table-margin {
+  margin-bottom: 3em;
+}
+
+.dox-table-card {
+  width: 600px;
+}
+.dox-table-card .dox-table-avatar {
+  color: #DD364D;
+  justify-content: space-between;
+}
+.dox-table-card img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  border: 1px solid #DD364D;
+  background-color: #DD364D;
+}
+.dox-table-card .dox-table-username {
+  padding: 0.5em 0;
+  align-items: center;
+}
+.dox-table-card .dox-table-author {
+  word-break: break-all;
+}
+.dox-table-card .dox-table-preview {
+  word-break: break-all;
+  margin: 0.2em 0 1em 0;
+  font-size: 14px;
+  grid-row: 1/2;
+}
+.dox-table-card .dox-table-stats {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-rows: 2, 1fr;
+}
+.dox-table-card .dox-table-buttons {
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  grid-row: 1/2;
+}
+.dox-table-card .dox-table-title {
+  font-weight: 600;
+}
+.dox-table-card .dox-table-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dox-table-card .dox-table-icon span {
+  margin-left: 5px;
+}
+
+.search-form form {
+  display: grid;
+  grid-template-rows: 3, 1fr;
+}
+.search-form input {
+  font-family: "Montserrat", sans-serif;
+  grid-row: 2/3;
+  width: auto;
+  outline: 0;
+  background: #333;
+  padding: 10px;
+  border: 3px solid #23272A;
+  color: #fff;
+}
+.search-form button {
+  font-family: "Montserrat", sans-serif;
+  grid-row: 1/3;
+  border: 3px solid #DD364D;
+  background: none;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  background: none;
+}
+.search-form button:hover {
+  background: #DD364D;
+  transition: 0.2s all ease-in-out;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .search-form {
+    width: auto;
+  }
+
+  .dox-table-card {
+    width: 100%;
+  }
+  .dox-table-card .dox-table-username {
+    justify-content: space-between;
+  }
+
+  .dox-table-icon {
+    margin: 0 5px;
+  }
+}
+
+/*# sourceMappingURL=doxes.css.map */

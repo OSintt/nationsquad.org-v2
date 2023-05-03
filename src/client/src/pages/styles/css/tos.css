@@ -1,0 +1,51 @@
+.guidelines-box, .guidelines-info {
+  font-family: "Helvetica";
+}
+
+.guidelines-box h2 {
+  margin: 0;
+  color: #DD364D;
+  font-weight: 500;
+}
+
+.tos-titleanddescription {
+  flex-wrap: wrap;
+  align-items: center;
+}
+.tos-titleanddescription p {
+  margin-right: 5px;
+}
+.tos-titleanddescription .tos-description {
+  color: #333;
+}
+.tos-titleanddescription .tos-title {
+  color: #DD364D;
+  font-weight: 600;
+}
+
+.publish-tos ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-left: 0;
+}
+.publish-tos ul p {
+  margin: 5px 0;
+}
+.publish-tos ul li {
+  margin: 0;
+  padding: 0;
+}
+
+.terms {
+  margin: 2em 0;
+}
+
+@media (max-width: 768px) {
+  .guidelines-container {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=tos.css.map */

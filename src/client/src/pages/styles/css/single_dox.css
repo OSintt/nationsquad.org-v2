@@ -1,0 +1,94 @@
+.single-dox-container {
+  padding: 1em;
+}
+.single-dox-container img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 1em;
+}
+.single-dox-container .single-dox-info {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-top: 1px solid #333;
+  border-left: 1px solid #333;
+  border-right: 1px solid #333;
+}
+.single-dox-container .single-dox-info .single-dox-heading {
+  flex-wrap: wrap;
+}
+.single-dox-container .single-dox-info .single-dox-heading span {
+  word-wrap: break-word;
+}
+.single-dox-container .single-dox-stats {
+  display: grid;
+  grid-template-rows: 3, 1fr;
+  align-items: center;
+}
+.single-dox-container .single-dox-stats span {
+  margin-right: 1em;
+  grid-row: 1/3;
+}
+.single-dox-container .single-dox-box {
+  border: 1px solid #333;
+  padding: 1em;
+}
+.single-dox-container .single-dox-content {
+  padding: 1em;
+  height: 100%;
+  width: 100%;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+.single-dox-container .single-dox-content a:hover {
+  text-decoration: underline;
+}
+.single-dox-container .single-dox-techs {
+  justify-content: space-between;
+}
+.single-dox-container .single-dox-techs .single-dox-size {
+  font-family: monospace;
+}
+.single-dox-container .single-dox-techs .single-dox-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+}
+.single-dox-container .single-dox-techs .single-dox-tags .single-dox-tag {
+  text-align: center;
+  color: #DD364D;
+  margin-right: 10px;
+  background: #222;
+  border-bottom: 2px solid #272626;
+  padding: 0 6px;
+  border-radius: 3px;
+  font-family: segoe ui, trebuchet MS, Lucida Sans Unicode, Lucida Sans, Sans-Serif;
+  font-size: 12px;
+  opacity: 0.75;
+}
+
+@media (max-width: 768px) {
+  .single-dox-container {
+    padding: 0;
+    margin: 0;
+  }
+  .single-dox-container .single-dox-box {
+    padding: 0.5em;
+  }
+  .single-dox-container .single-dox-content {
+    padding: 0;
+  }
+  .single-dox-container .single-dox-actions {
+    justify-content: center;
+  }
+  .single-dox-container .single-dox-info {
+    padding: 0;
+    justify-content: center;
+    text-align: center;
+  }
+  .single-dox-container .single-dox-info .single-dox-heading {
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=single_dox.css.map */

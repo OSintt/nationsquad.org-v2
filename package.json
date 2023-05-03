@@ -1,0 +1,47 @@
+{
+  "name": "NationSquad",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/app",
+    "dev": "nodemon src/app --exec babel-node",
+    "done": "babel-node src/app",
+    "build-client": "cd src/client && npm install && npm run build",
+    "build-server": "babel src --ignore src/client --out-dir dist",
+    "scss": "cd src/client/src/pages/styles && sass --watch scss:css",
+    "forever": "forever start dist/app",
+    "setup": "npm run build-client && npm run build-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.5",
+    "@babel/node": "^7.16.8",
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/runtime": "^7.17.2",
+    "axios": "^0.26.0",
+    "connect-mongo": "^4.6.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
+    "express-rate-limit": "^6.0.5",
+    "express-session": "^1.17.2",
+    "filesize": "^8.0.7",
+    "hcaptcha": "^0.1.1",
+    "helmet": "^5.0.1",
+    "mongo-connect": "0.0.6",
+    "mongoose": "^6.1.5",
+    "morgan": "^1.10.0",
+    "passport": "^0.5.2",
+    "passport-discord": "^0.1.4"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.7",
+    "@faker-js/faker": "^6.0.0-beta.0",
+    "nodemon": "^2.0.15"
+  }
+}

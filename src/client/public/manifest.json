@@ -1,0 +1,15 @@
+{
+  "short_name": "NationSquad",
+  "name": "NationSquad, Repositorio de doxes en español",
+  "icons": [
+    {
+      "src": "logo.jpg",
+      "sizes": "256x256",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#DD364D",
+  "background_color": "#000"
+}

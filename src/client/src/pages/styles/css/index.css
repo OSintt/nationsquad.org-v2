@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+body {
+  background: #000;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  padding: 2em;
+}
+
+.flex {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+hr {
+  background-color: #a6a6a6;
+  border: none;
+  height: 1px;
+  color: #a6a6a6;
+}
+
+.muted {
+  color: #333;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.load-more {
+  width: 30px;
+  height: 30px;
+}
+
+.show {
+  visibility: visible;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 10px;
+}
+
+@keyframes anvil {
+  0% {
+    transform: scale(1) translateY(0px);
+    opacity: 0;
+    box-shadow: 0 0 0 rgba(241, 241, 241, 0);
+  }
+  1% {
+    transform: scale(0.96) translateY(10px);
+    opacity: 0;
+    box-shadow: 0 0 0 rgba(241, 241, 241, 0);
+  }
+  100% {
+    transform: scale(1) translateY(0px);
+    opacity: 1;
+    box-shadow: 0 0 500px rgba(241, 241, 241, 0);
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 1em;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

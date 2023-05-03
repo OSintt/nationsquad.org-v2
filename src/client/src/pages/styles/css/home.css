@@ -1,0 +1,86 @@
+.home-container {
+  justify-content: center;
+}
+.home-container .main-wrapper {
+  height: 70vh;
+  width: 1200px;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+.home-container h1 {
+  font-weight: 600;
+  font-size: 55px;
+  margin-bottom: 0;
+}
+.home-container .home-img-wrapper {
+  grid-row: 1/2;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+.home-container .home-img-wrapper img {
+  border-radius: 50%;
+}
+.home-container .home-items-wrapper {
+  grid-row: 1/2;
+}
+.home-container .home-links {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em 0;
+}
+.home-container .home-links div {
+  margin-right: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  border-radius: 30px;
+  text-align: center;
+  grid-row: 1/2;
+  min-width: 230px;
+  cursor: pointer;
+  border: 1px solid #DD364D;
+  transition: 0.3s all ease-in-out;
+}
+.home-container .home-links div span {
+  margin-left: 10px;
+}
+.home-container .home-links .discord-button {
+  background-color: #DD364D;
+}
+.home-container .home-links .discord-button:hover {
+  background: transparent;
+}
+.home-container .home-links .bot-button {
+  border: 1px solid #fff;
+}
+.home-container .home-links .bot-button:hover {
+  border: 1px solid #DD364D;
+  color: #DD364D;
+}
+
+@media (max-width: 768px) {
+  .home-container h1 {
+    font-size: 35px;
+  }
+  .home-container .main-wrapper {
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+    text-align: center;
+  }
+  .home-container .home-links {
+    padding: 0;
+    justify-content: center;
+  }
+  .home-container .home-links div {
+    max-width: 300px;
+    margin: auto;
+    margin-bottom: 1em;
+  }
+}
+
+/*# sourceMappingURL=home.css.map */

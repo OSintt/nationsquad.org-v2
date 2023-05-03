@@ -1,0 +1,96 @@
+@import '__vars';
+
+.home-container {
+    justify-content: center;
+
+    .main-wrapper {
+        height: 70vh;
+        width: 1200px;
+        padding: 1em;
+        display: flex;
+        align-items: center;
+        justify-self: center;
+    }
+    h1 {
+        font-weight: 600;
+        font-size: 55px;
+        margin-bottom: 0;
+    }
+    .home-img-wrapper {
+        grid-row: 1/2;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        img {
+            border-radius: 50%;
+        }
+    }
+
+    .home-items-wrapper {
+        grid-row: 1/2;
+    }
+
+    .home-links {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1em 0;
+        div {
+            margin-right: 1em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1em;
+            border-radius: 30px;
+            text-align: center;
+            grid-row: 1/2;
+            min-width: 230px;
+            cursor: pointer;
+            border: 1px solid $red;
+            transition: .3s all ease-in-out;
+
+            span {
+                margin-left: 10px;
+            }
+        }
+        .discord-button {           
+            background-color: $red;
+            &:hover {
+                background: transparent;
+            }
+        }
+        .bot-button {
+            border: 1px solid $white;
+            &:hover {
+                border: 1px solid $red;
+                color: $red;
+            }
+        }
+    }
+}
+
+@media (max-width: $tablet) {
+    .home-container {
+
+        h1 {
+            font-size: 35px;
+        }
+
+        .main-wrapper {
+            width: 100%;
+            padding: 0;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .home-links {
+            padding: 0;
+            justify-content: center;
+
+            div {
+                max-width: 300px;
+                margin: auto;
+                margin-bottom: 1em;
+            }
+        }
+    }
+}

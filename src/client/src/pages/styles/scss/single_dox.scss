@@ -1,0 +1,106 @@
+@import "__vars";
+
+.single-dox-container {
+    padding: 1em;
+    img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        margin: 1em;
+    }
+
+    .single-dox-info {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        border-top: 1px solid $muted;
+        border-left: 1px solid $muted;
+        border-right: 1px solid $muted;
+
+        .single-dox-heading {
+            flex-wrap: wrap;
+
+            span {
+                word-wrap: break-word;
+            }
+        }
+    }
+
+    .single-dox-stats {
+        display: grid;
+        grid-template-rows: (3, 1fr);
+        align-items: center;
+
+        span {
+            margin-right: 1em;
+            grid-row: 1/3;
+        }
+    }
+
+    .single-dox-box {
+        border: 1px solid $muted;
+        padding: 1em;
+    }
+
+    .single-dox-content {
+        padding: 1em;
+        height: 100%;
+        width: 100%;
+        word-wrap: break-word;
+        white-space: pre-wrap;
+        a {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    .single-dox-techs {
+        justify-content: space-between;
+        .single-dox-size {
+            font-family: monospace;
+        }
+
+        .single-dox-tags {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: end;
+            .single-dox-tag {
+                text-align: center;
+                color: $red;
+                margin-right: 10px;
+                background: #222;
+                border-bottom: 2px solid #272626;
+                padding: 0 6px;
+                border-radius: 3px;
+                font-family: segoe ui, trebuchet MS, Lucida Sans Unicode, Lucida Sans, Sans-Serif;
+                font-size: 12px;
+                opacity: 0.75;
+            }
+        }
+    }
+}
+
+@media (max-width: $tablet) {
+    .single-dox-container {
+        padding: 0;
+        margin: 0;
+
+        .single-dox-box {
+            padding: .5em;
+        }
+        .single-dox-content {
+            padding: 0;
+        }
+
+        .single-dox-actions {
+            justify-content: center;
+        }
+        .single-dox-info {
+            padding: 0;
+            justify-content: center;
+            text-align: center;
+            .single-dox-heading {
+                justify-content: center;
+            }
+        }
+    }
+}
